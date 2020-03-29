@@ -6,16 +6,11 @@
 	<!--SEO-->
 	<meta name="description" content="¿Querés que te cuente el cuento de la buena pipa?. Escuchá una de las mejores bandas musicales de Rosario con más de 10 años de trayectoria">
 	<meta name="keywords" content="banda musical rosarina, los cuentos de la buena pipa, música rosario, banda musical, música electrónica, cumbia, rock, psicodelia, música experimental">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!--Bootstrap-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<!--Font Awesome iconos-->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<!--Material Design-->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 	<!--Animación Scroll-->
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 	<!--Estilos Propios-->
@@ -25,7 +20,7 @@
 <body>
 	<div class="container-fluid">
 		<header>
-			<nav>
+			<nav class="justify-content-center">
 				<span class="logoNav" >
 					<a href="index.html">
 						<img src="images/logo_loscuentos.svg" alt="Logotipo de Los Cuentos de la Buena Pipa">
@@ -33,21 +28,24 @@
 				</span>
 				<span class="linkMenu">
 					<a class="text-decoration-none" href="index.html">INICIO</a>
-					<a class="text-decoration-none" href="los_cuentos.html">LOS CUENTOS</a>
+					<a class="text-decoration-none active" href="los_cuentos.html">LOS CUENTOS</a>
 					<a class="text-decoration-none" href="discografia.html">DISCOGRAFÍA</a>
 					<a class="text-decoration-none" href="galeria.html">GALERIA</a>
 					<a class="text-decoration-none" href="contacto.html">CONTACTO</a>
 				</span>
 				<span class="social">
+					<a class="social-icon" data-tooltip="Instagram" href="https://www.instagram.com/loscuentosdelabuenapipa/?hl=es-la" target="_blank">
+	    				<i class="fa fa-instagram" aria-hidden="true"></i>
+	  				</a>
 					<a class="social-icon" data-tooltip="Facebook" href="https://www.facebook.com/loscuentosdelabuenapipa/" target="_blank">
-	    			<i class="fa fa-facebook" aria-hidden="true"></i>
+	    				<i class="fa fa-facebook" aria-hidden="true"></i>
 	 				</a>
 	  				<a class="social-icon" data-tooltip="YouTube" href="https://www.youtube.com/user/LCDLBuenaPipa" target="_blank">
-	    			<i class="fa fa-youtube" aria-hidden="true"></i>
+	    				<i class="fa fa-youtube" aria-hidden="true"></i>
 	  				</a>
-	  				<a class="social-icon" data-tooltip="Instagram" href="https://www.instagram.com/loscuentosdelabuenapipa/?hl=es-la" target="_blank">
-	    			<i class="fa fa-instagram" aria-hidden="true"></i>
-	  				</a>
+	  				<a class="social-icon" data-tooltip="Spotify" href="https://open.spotify.com/artist/4yIsXFg73pYq9XvTiV3el8?si=UlW5IBzlSYe2hx1Jk4AeiQ" target="_blank">
+		    			<i class="fa fa-spotify" aria-hidden="true"></i>
+		  			</a>
 				</span>
 			</nav>
 		</header>
@@ -55,28 +53,35 @@
 		<main>
 			<section>
 				<article>
+					<h1 class="h1clase">Los Cuentos de la Buena Pipa</h1>
 					<div class="contenedorLosCuentos">
-						<h1 class="h1clase">Los Cuentos de la Buena Pipa</h1>
 						<div id="carouselExampleFade" class="slideLosCuentos carousel slide carousel-fade" data-ride="carousel">
-						  	<div class="carousel-inner">
-						    	<div class="carousel-item active">
-						      	<img src="images/foto_banda1.jpg" class="img-responsive d-block w-100" alt="...">
-						    </div>
-						    <div class="carousel-item">
-						      	<img src="images/foto_banda2.jpg" class="img-responsive d-block w-100" alt="...">
-						    </div>
-						    <div class="carousel-item">
-						      	<img src="images/foto_banda3.jpg" class="img-responsive d-block w-100" alt="...">
-						    </div>
+							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+							  	<ol class="carousel-indicators">
+								    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+								    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+								    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							  	</ol>
+							  	<div class="carousel-inner">
+							    	<div class="carousel-item active">
+							      	<img src="images/foto_banda1.jpg" class="img-responsive d-block w-100" alt="Foto grupal de los cuestos en estudio fotográfico">
+							    </div>
+							    <div class="carousel-item">
+							      	<img src="images/foto_banda2.jpg" class="img-responsive d-block w-100" alt="Foto grupal en Club 1518, 08-12-2018, Rosario (Santa Fe, Argentina)">
+							    </div>
+							    <div class="carousel-item">
+							      	<img src="images/foto_banda3.jpg" class="img-responsive d-block w-100" alt="Recital los cuentos en Chile">
+							    </div>
+							  	</div>
+							  	<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+							    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    	<span class="sr-only">Siguiente</span>
+							  	</a>
+							  	<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+							    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    	<span class="sr-only">Anterior</span>
+							  	</a>
 						  	</div>
-						  	<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-						    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						    	<span class="sr-only">Siguiente</span>
-						  	</a>
-						  	<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-						    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						    	<span class="sr-only">Anterior</span>
-						  	</a>
 						</div>
 						<div class="divContenidoLC" div data-aos="fade-up" data-aos-duration="1000">
 							<h2 class="h2clase">La curiosidad siempre quiso escuchar el cuento de la buena pipa</h2>
@@ -96,59 +101,56 @@
 				</article>
 
 				<article>
-					<h1 class="h1clase" data-aos="fade-down"  data-aos-duration="900">Integrantes</h1>
-					<div class="contenedorFotosIntegrantes">
-						<div class="card-deck">
-		  					<div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="900">
-		    					<img class="img-responsive d-block w-100" src="images/eric_flagel.jpg" alt="Eric Flagel">
-		    						<div class="card-body">
-		      							<h5 class="card-title">Eric Flagel</h5>
-		      							<p class="card-text">Aquí va un texto descriptivo sobre el músico</p>
-		    						</div>
-		    						<div class="card-footer">
-		      							<small class="text-muted">Batería</small>
-		    						</div>
-		  					</div>
-		  					<div class="card" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="900">
-		    					<img class="img-responsive d-block w-100" src="images/kolia_krasotkin.jpg" alt="Kolia Krasotkin">
-		    						<div class="card-body">
-		      							<h5 class="card-title">Kolia Krasotkin</h5>
-		      							<p class="card-text">Aquí va un texto descriptivo sobre el músico</p>
-		    						</div>
-		    					<div class="card-footer">
-		      						<small class="text-muted">Bajo</small>
-		    					</div>
-		  					</div>
-		  					<div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="900">
-		   						<img class="img-responsive d-block w-100" src="images/paila.jpg" alt="Paila">
-		    						<div class="card-body">
-		      							<h5 class="card-title">Paila</h5>
-		      							<p class="card-text">Aquí va un texto descriptivo sobre el músico</p>
-		    						</div>
-		    					<div class="card-footer">
-		      						<small class="text-muted">Voz principal / Guitarra eléctrica</small>
-		    					</div>
-		  					</div>
-		  					<div class="card" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="900">
-		   				 		<img class="img-responsive d-block w-100" src="images/lisandro_valls.jpg" alt="Lisandro Valls">
-		    					<div class="card-body">
-								    <h5 class="card-title">Lisandro Valls</h5>
-								    <p class="card-text">Aquí va un texto descriptivo sobre el músico</p>
-		    					</div>
-		    					<div class="card-footer">
-		      						<small class="text-muted">Guitarra eléctrica / Voz</small>
-		    					</div>
-		  					</div>
-		  					<div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="900">
-		   						<img class="img-responsive d-block w-100" src="images/martin_sanabria.jpg" alt="Martín Sanabria">
-		    					<div class="card-body">
-								    <h5 class="card-title">Martín Sanabria</h5>
-								    <p class="card-text">Aquí va un texto descriptivo sobre el músico</p>
-		    					</div>
-		    					<div class="card-footer">
-		      						<small class="text-muted">Percusión</small>
-		    					</div>
-		  					</div>
+					<div class="contenedorFondoDiscografía">
+						<h1 class="h1clase" data-aos="fade-down"  data-aos-duration="900">Integrantes</h1>
+						<div class="contenedorFotosIntegrantes">
+							<div class="card-deck">
+			  					<div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="900">
+			    					<img class="img-responsive d-block w-100" src="images/eric_flagel.jpg" alt="Eric Flagel">
+			    					<div class="card-body">
+			      						<h5 class="nombreint card-title">Eric Flagel</h5>
+			    					</div>
+			    					<div class="card-footer">
+			      						<small class="text-muted">Batería</small>
+			    					</div>
+			  					</div>
+			  					<div class="card" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="900">
+			    					<img class="img-responsive d-block w-100" src="images/kolia_krasotkin.jpg" alt="Kolia Krasotkin">
+			    					<div class="card-body">
+			      						<h5 class="nombreint card-title">Kolia Krasotkin</h5> 		
+			      					</div>
+			    					<div class="card-footer">
+			      						<small class="text-muted">Bajo</small>
+			    					</div>
+			  					</div>
+			  					<div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="900">
+			   						<img class="img-responsive d-block w-100" src="images/paila.jpg" alt="Eduardo Bonfatti">
+			    					<div class="card-body">
+			      						<h5 class="nombreint card-title">Eduardo Bonfatti</h5>
+			      					</div>
+			    					<div class="card-footer">
+			      						<small class="text-muted">Voz principal / Guitarra</small>
+			    					</div>
+			  					</div>
+			  					<div class="card" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="900">
+			   				 		<img class="img-responsive d-block w-100" src="images/lisandro_valls.jpg" alt="Lisandro Valls">
+			    					<div class="card-body">
+									    <h5 class="nombreint card-title">Lisandro Valls</h5>
+									</div>
+			    					<div class="card-footer">
+			      						<small class="text-muted">Guitarra eléctrica / Voz</small>
+			    					</div>
+			  					</div>
+			  					<div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="900">
+			   						<img class="img-responsive d-block w-100" src="images/martin_sanabria.jpg" alt="Martín Sanabria">
+			    					<div class="card-body">
+									    <h5 class="nombreint card-title">Martín Sanabria</h5>
+									</div>
+			    					<div class="card-footer">
+			      						<small class="text-muted">Percusión</small>
+			    					</div>
+			  					</div>
+							</div>
 						</div>
 					</div>
 				</article>
@@ -156,18 +158,45 @@
 		</main>
 		
 		<footer>
-			<div id="contenedorFooter">
-				<a href="https://www.facebook.com/" target="_blanck">
-					<img class="imgRedesSociales" src="images/facebook.png" alt="Link a Facebook">
-				</a>
-				<a href="https://www.instagram.com/" target="_blanck">
-					<img class="imgRedesSociales" src="images/instagram.png" alt="Link a Instagram">
-				</a>
-				<a href="https://www.youtube.com/" target="_blanck">
-					<img class="imgRedesSociales" src="images/youtube.png" alt="Link a Youtube">
-				</a>
+			<div class="container">
+    			<div class="row d-flex text-center justify-content-center mb-4">
+					<div class="flex-center">
+          				<a class="social-icon-footer" data-tooltip="Instagram" href="https://www.instagram.com/loscuentosdelabuenapipa/?hl=es-la" target="_blank">
+	    					<i class="fa fa-instagram" aria-hidden="true"></i>
+	  					</a>
+						<a class="social-icon-footer" data-tooltip="Facebook" href="https://www.facebook.com/loscuentosdelabuenapipa/" target="_blank">
+	    					<i class="fa fa-facebook" aria-hidden="true"></i>
+	 					</a>
+	  					<a class="social-icon-footer" data-tooltip="YouTube" href="https://www.youtube.com/user/LCDLBuenaPipa" target="_blank">
+	    					<i class="fa fa-youtube" aria-hidden="true"></i>
+	  					</a>
+	  					<a class="social-icon-footer" data-tooltip="Spotify" href="https://open.spotify.com/artist/4yIsXFg73pYq9XvTiV3el8?si=UlW5IBzlSYe2hx1Jk4AeiQ" target="_blank">
+		    				<i class="fa fa-spotify" aria-hidden="true"></i>
+		  				</a>
+       		 		</div>
+   		 		</div>
+  				<div class="row text-center d-flex justify-content-center">
+      				<div class="menuFooter col-md-2 mb-3">
+        				<a class="text-decoration-none" href="index.html">INICIO</a>
+      				</div>
+      				<div class="menuFooter col-md-2 mb-3">
+        				<a class="text-decoration-none" href="los_cuentos.html">LOS CUENTOS</a>
+      				</div>
+      				<div class="menuFooter col-md-2 mb-3">
+       					<a class="text-decoration-none" href="discografia.html">DISCOGRAFÍA</a>
+      				</div>
+      				<div class="menuFooter col-md-2 mb-3">
+       					<a class="text-decoration-none" href="galeria.html">GALERIA</a>
+      				</div>
+      				<div class="menuFooter col-md-2 mb-3">
+        				<a class="text-decoration-none" href="contacto.html">CONTACTO</a>
+      				</div>
 				</div>
-				<p id="pfooter">&copy; 2020 by Nico Foster. Todos los derechos reservados.</p>
+    		</div>
+  			<hr>
+ 			<div class="copr text-center">© 2020 Copyright:
+    			<a href="https://www.linkedin.com/in/nico-foster/">NicoFoster</a>
+  			</div>
 		</footer>
 	 </div>
 

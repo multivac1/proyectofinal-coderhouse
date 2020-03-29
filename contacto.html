@@ -25,7 +25,7 @@
 <body>
 	<div class="container-fluid">
 		<header>
-			<nav>
+			<nav class="justify-content-center">
 				<span class="logoNav" >
 					<a href="index.html">
 						<img src="images/logo_loscuentos.svg" alt="Logotipo de Los Cuentos de la Buena Pipa">
@@ -36,84 +36,116 @@
 					<a class="text-decoration-none" href="los_cuentos.html">LOS CUENTOS</a>
 					<a class="text-decoration-none" href="discografia.html">DISCOGRAFÍA</a>
 					<a class="text-decoration-none" href="galeria.html">GALERIA</a>
-					<a class="text-decoration-none" href="contacto.html">CONTACTO</a>
+					<a class="text-decoration-none active" href="contacto.html">CONTACTO</a>
 				</span>
 				<span class="social">
+					<a class="social-icon" data-tooltip="Instagram" href="https://www.instagram.com/loscuentosdelabuenapipa/?hl=es-la" target="_blank">
+	    				<i class="fa fa-instagram" aria-hidden="true"></i>
+	  				</a>
 					<a class="social-icon" data-tooltip="Facebook" href="https://www.facebook.com/loscuentosdelabuenapipa/" target="_blank">
-	    			<i class="fa fa-facebook" aria-hidden="true"></i>
+	    				<i class="fa fa-facebook" aria-hidden="true"></i>
 	 				</a>
 	  				<a class="social-icon" data-tooltip="YouTube" href="https://www.youtube.com/user/LCDLBuenaPipa" target="_blank">
-	    			<i class="fa fa-youtube" aria-hidden="true"></i>
+	    				<i class="fa fa-youtube" aria-hidden="true"></i>
 	  				</a>
-	  				<a class="social-icon" data-tooltip="Instagram" href="https://www.instagram.com/loscuentosdelabuenapipa/?hl=es-la" target="_blank">
-	    			<i class="fa fa-instagram" aria-hidden="true"></i>
-	  				</a>
+	  				<a class="social-icon" data-tooltip="Spotify" href="https://open.spotify.com/artist/4yIsXFg73pYq9XvTiV3el8?si=UlW5IBzlSYe2hx1Jk4AeiQ" target="_blank">
+		    			<i class="fa fa-spotify" aria-hidden="true"></i>
+		  			</a>
 				</span>
 			</nav>
 		</header>
 
 			<main>
 				<div class="contenedorVideo">
-	  				<div class="overlay"></div>
-	  				<video class="videoFondo" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-	    				<source src="video/video_contacto.mp4" type="video/mp4">
-	  				</video>
+			  		<div class="overlay"></div>
+			  		<video class="videoFondo" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+			    		<source src="video/video_contacto.mp4" type="video/mp4">
+			  		</video>
 				</div>
-				<section class="containerform">
+				<section>
 					<article>
-						<h1 class="h1contrataciones">CONTRATACIONES</h1>
-						<div class="divFormulario">
-							<form action="" method="" enctype="">
-								<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-								    <input class="textInput mdl-textfield__input" type="text" id="sample3">
-								    <label class="textLabel mdl-textfield__label" for="sample3">Nombre:</label>
-				  				</div>
-								<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-								    <input class="textInput mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
-								    <label class="textLabel mdl-textfield__label" for="sample4">Teléfono:</label>
-								    <span class="mdl-textfield__error">Por favor, ingrese su número telefónico</span>
-								</div>
-								<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-								    <input class="textInput mdl-textfield__input" type="text" id="sample3">
-								    <label class="textLabel mdl-textfield__label" for="sample3">Email:</label>
-				  				</div>
-								<div class="prefContacto">Preferencia de Contacto:</div>
-								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-				  					<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-				  					<span class="textCheckbox mdl-checkbox__label">Teléfono</span>
-								</label>
-								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-				  					<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
-				  					<span class="textCheckbox mdl-checkbox__label">Email</span>
-								</label>
-								<div class="contenedorTextarea mdl-textfield mdl-js-textfield">
-				    				<textarea class="textInput mdl-textfield__input" type="text" rows= "6" id="sample5"></textarea>
-				    				<label class="textLabel mdl-textfield__label" for="sample5">Escriba aquí su consulta...</label>
-				  				</div>
-								<div>
-									<input class="mdl-button mdl-js-button mdl-button--accent" type="reset" name="borrar" value="Borrar">
-									<input class="mdl-button mdl-js-button mdl-button--accent" type="submit" name="enviar" value="Enviar">
-								</div>
-							</form>
+						<div class="containerform">	
+							<h1 class="h1contactanos">Contactanos</h1>
+							<div class="divFormulario">
+								<form action="" method="" enctype="">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+										<input class="textInput mdl-textfield__input" type="text" id="sample3">
+										<label class="textLabel mdl-textfield__label" for="sample3">Nombre:</label>
+						  			</div>
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+										<input class="textInput mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+										<label class="textLabel mdl-textfield__label" for="sample4">Teléfono:</label>
+										<span class="mdl-textfield__error">Por favor, ingrese su número telefónico</span>
+									</div>
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+										<input class="textInput mdl-textfield__input" type="text" id="sample3">
+										<label class="textLabel mdl-textfield__label" for="sample3">Email:</label>
+						  			</div>
+									<div class="prefContacto">Preferencia de Contacto:</div>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+						  				<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+						  				<span class="textCheckbox mdl-checkbox__label">Teléfono</span>
+									</label>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+						  				<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+						  				<span class="textCheckbox mdl-checkbox__label">Email</span>
+									</label>
+									<div class="contenedorTextarea mdl-textfield mdl-js-textfield">
+						    			<textarea class="textInput mdl-textfield__input" type="text" rows= "6" id="sample5"></textarea>
+						    			<label class="textLabel mdl-textfield__label" for="sample5">Escriba aquí su consulta...</label>
+						  			</div>
+									<div>
+										<input class="mdl-button mdl-js-button mdl-button--accent" type="reset" name="borrar" value="Borrar">
+										<input class="mdl-button mdl-js-button mdl-button--accent" type="submit" name="enviar" value="Enviar">
+									</div>
+								</form>
+							</div>
 						</div>
 					</article>
 				</section>
 			</main>
 			
 			<footer>
-				<div id="contenedorFooter">
-					<a href="https://www.facebook.com/" target="_blanck">
-						<img class="imgRedesSociales" src="imagenes/facebook.png" alt="Link a Facebook">
-					</a>
-					<a href="https://www.instagram.com/" target="_blanck">
-						<img class="imgRedesSociales" src="imagenes/instagram.png" alt="Link a Instagram">
-					</a>
-					<a href="https://www.youtube.com/" target="_blanck">
-						<img class="imgRedesSociales" src="imagenes/youtube.png" alt="Link a Youtube">
-					</a>
+			<div class="container">
+    			<div class="row d-flex text-center justify-content-center mb-4">
+					<div class="flex-center">
+          				<a class="social-icon-footer" data-tooltip="Instagram" href="https://www.instagram.com/loscuentosdelabuenapipa/?hl=es-la" target="_blank">
+	    					<i class="fa fa-instagram" aria-hidden="true"></i>
+	  					</a>
+						<a class="social-icon-footer" data-tooltip="Facebook" href="https://www.facebook.com/loscuentosdelabuenapipa/" target="_blank">
+	    					<i class="fa fa-facebook" aria-hidden="true"></i>
+	 					</a>
+	  					<a class="social-icon-footer" data-tooltip="YouTube" href="https://www.youtube.com/user/LCDLBuenaPipa" target="_blank">
+	    					<i class="fa fa-youtube" aria-hidden="true"></i>
+	  					</a>
+	  					<a class="social-icon-footer" data-tooltip="Spotify" href="https://open.spotify.com/artist/4yIsXFg73pYq9XvTiV3el8?si=UlW5IBzlSYe2hx1Jk4AeiQ" target="_blank">
+		    				<i class="fa fa-spotify" aria-hidden="true"></i>
+		  				</a>
+       		 		</div>
+   		 		</div>
+  				<div class="row text-center d-flex justify-content-center">
+      				<div class="menuFooter col-md-2 mb-3">
+        				<a class="text-decoration-none" href="index.html">INICIO</a>
+      				</div>
+      				<div class="menuFooter col-md-2 mb-3">
+        				<a class="text-decoration-none" href="los_cuentos.html">LOS CUENTOS</a>
+      				</div>
+      				<div class="menuFooter col-md-2 mb-3">
+       					<a class="text-decoration-none" href="discografia.html">DISCOGRAFÍA</a>
+      				</div>
+      				<div class="menuFooter col-md-2 mb-3">
+       					<a class="text-decoration-none" href="galeria.html">GALERIA</a>
+      				</div>
+      				<div class="menuFooter col-md-2 mb-3">
+        				<a class="text-decoration-none" href="contacto.html">CONTACTO</a>
+      				</div>
 				</div>
-				<p id="pfooter">&copy; 2020 by Nico Foster. Todos los derechos reservados.</p>
-			</footer>
+    		</div>
+  			<hr>
+ 			<div class="copr text-center">© 2020 Copyright:
+    			<a href="https://www.linkedin.com/in/nico-foster/">NicoFoster</a>
+  			</div>
+		</footer>
 		</div>
 	
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
