@@ -1,1 +1,459 @@
+//VARIABLES TIPOGRAFÍA
+$maincolor-font: #d30172;
+$secondcolor-font: white;
+$mainfont: 'Lato', sans-serif;
+$secondfont: 'Poppins', sans-serif;
+
+
+
+/*Quito los Margenes y Padding por defecto*/
+*{
+	padding: 0px;
+	margin: 0px;
+}
+/*BODY COLOR*/
+body {
+	background-color: #121421;
+}
+
+/*Tamaño tipografía por defecto*/
+html {
+	font-size: 16px;
+	line-height: 1.5rem;
+}
+
+/*INICIO ESTILO DE LOS TITULARES Y PARRAFOS*/
+.h1index {
+	margin-bottom: 10px;
+	color: $secondcolor-font;
+	font-family: $mainfont;
+	font-size: 2.5rem;
+	text-align: center;
+	text-shadow: 3px 3px 2px rgba(0,0,0,0.8);
+}
+.pindex {
+	margin: 20px auto;
+	color: $secondcolor-font;
+	font-family: $mainfont;
+	font-size: 1.75rem;
+	line-height: 1.8rem;
+	text-align: center;
+	text-shadow: 3px 3px 2px rgba(0,0,0,0.8);
+}
+.h1clase {
+	margin-bottom: 0.9rem;
+	color: $secondcolor-font;
+	font-family: $mainfont;
+	font-size: 2rem;
+	text-shadow: 3px 3px 2px rgba(0,0,0,0.8);
+	text-align: center;
+}
+.h2clase {
+	margin-bottom: 10px;
+	color: $maincolor-font; 
+	font-family: $mainfont;
+	font-size: 1.5rem;
+	text-shadow: 3px 3px 2px rgba(0,0,0,0.8);
+}
+.h3clase {
+	color: $maincolor-font;
+	font-family: $mainfont;
+	font-size: 1rem;
+}
+.pclase {
+	color: #d1d1d1;
+	font-family: $mainfont;
+}
+#disco1, #disco2, #disco3, #disco4{
+	color: #2471A3;
+	font-family: $mainfont;
+}
+caption {
+	font-family: $mainfont;
+	font-size: 0.8rem;
+}
+main > section > article {
+	margin-top: 30px;
+}
+
+/*MENU DE NAVEGACIÓN*/
+nav {
+	height: 60px;
+	width: 100%;
+	padding-top: 15px;
+	font-family: $secondfont;
+	font-size: 1rem;
+	background-color: #0d0f18;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+.linkMenu {
+	margin: 0 70px;
+}
+.linkMenu > a {
+	margin: 25px;
+	color: $secondcolor-font;
+}
+/*Transición menú hover*/
+.linkMenu a:hover {
+	color: #54A8A7;
+	transition: 0.5s; 
+}
+.active {
+	color: #54A8A7 !important;
+}
+.social-icon {
+	margin: 10px;
+	color: $secondcolor-font;
+}
+.social-icon:hover {
+	color: $maincolor-font;
+	text-decoration: none;
+}
+.logoNav {
+	height: 100%;
+	width: 100px;
+}
+.logoNav > a > img {
+	width: 100%;
+	height: 100%;
+}
+/*FIN MENU*/
+
+/*INICIO INDEX*/
+#backIndex {
+	background-image: url(../images/fondo_index.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.contenedorLogo {
+	margin-bottom: 300px;
+}
+#logo {
+	margin: auto;
+	padding-top: 180px;
+	padding-bottom: 10px;
+	display: block;
+}
+.contenedorVideoIndex {
+	margin-bottom: 50px;
+	width: 100%;
+	height: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.videoIndex {
+	margin: auto;
+	width: 720px;
+	height: 480px;
+	box-shadow: 5px 5px 3px rgba(0,0,0,0.5);
+	display: inline-flex;
+}
+.contenedor-cta {
+	margin-bottom: 100px;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+/*FIN INDEX*/
+
+/*INICIO LOS CUENTOS*/
+.contenedorLosCuentos {
+	width: auto;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+.slideLosCuentos {
+	object-fit: cover;
+  	height: auto;
+ 	width: 920px;
+ }
+.divContenidoLC {
+	margin-top: 15px;
+	margin-bottom: 80px;
+	width: 920px;
+	letter-spacing: 0.4px;
+}
+.divContenidoLC > .h2clase {
+	font-size: 1.8rem;
+}
+.divContenidoLC > .pclase {
+	font-size: 1.3rem;
+	line-height: 2rem;
+}
+.contenedorFotosIntegrantes {
+	margin: 50px 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row; 
+   	justify-content: center;
+}
+.nombreint {
+	color: $maincolor-font;
+}
+.card {
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.5);
+}
+.contenedorFondoDiscografía {
+	padding-bottom: 200px;
+	background-image: url(../images/fondo_discografia.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+}
+/*FIN LOS CUENTOS*/
+
+/*INICIO DISCOGRAFÍA*/
+.contenedorAlbum {
+	margin: 50px 0 10px 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.contenidoAlbum {
+	width: 70%;
+	color: $secondcolor-font;
+	display: flex;
+	flex-flow: row nowrap;
+}
+.contenidoAlbum a {
+	text-decoration: none;
+	color: $secondcolor-font;
+	font-size: 1.8rem;
+}
+.contenidoAlbum a:hover {
+	color: #d30172;
+}
+.contenidoAlbum > span > iframe:hover {
+	box-shadow: 0px 0px 25px rgba(211,1,114,0.7);
+	transition-duration: 0.3s;
+}
+.infoAlbum {
+	margin-left: 40px;
+	width: 100%;
+}
+.contenedorAlbum > .contenidoAlbum > .infoAlbum > table {
+	margin-bottom: 10px;
+}
+.contenedorAlbum > .contenidoAlbum > .infoAlbum > table, tr, th {
+	border:rgba(0,0,0,0) 10px solid;
+}	
+.contenedorTracklist {
+	margin: 30px auto 80px auto;
+	padding: 10px;
+	width: 800px;
+	text-align: center;
+}
+.separador {
+	width: 800px;
+	border: 1px solid white; 
+	margin-top: 25px; 
+	margin-bottom: 20px;
+}
+h2 {
+	width: 100%;
+	font-size: 1.8rem;
+	color: $secondcolor-font;
+}
+/*FIN DISCOGRAFÍA*/
+
+/*INICIO GALERIA*/
+.contenedorGaleria {
+	width: 100%;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+}
+ .contenidoGaleria {
+ 	margin: auto;
+ 	padding: 5px;
+ 	width: 80%;
+	text-align: center;
+	display: grid;
+	grid-gap: 0.7rem;
+	grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+	grid-auto-flow: row dense;
+}
+.contenidoGaleria > figure {
+	filter: grayscale(100%);
+	width: auto;
+	height: 200px;
+}
+.contenidoGaleria > figure:hover {
+	transform: translateY(-5px);
+	transition-duration: 0.3s;
+	box-shadow: 6px 9px 7px 0px rgba(211,1,114,0.4);
+	filter: grayscale(0%);
+}
+.contenidoGaleria > figure > a > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+.horizontal {
+	grid-column: span 2;
+}
+.contenedorVideos {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+.contenedorVideos > span {
+	margin: 10px;
+	width: 100%;
+	height: 100%;
+}
+/*FIN GALERIA*/
+
+/*CONTACTO*/
+.contenedorVideo {
+	margin-bottom: 200px;
+	position: relative;
+  	background-color: black;
+  	height: 80vh;
+  	min-height: 25rem;
+  	width: 100%;
+ 	overflow: hidden;
+ 	z-index: -1;
+ 	filter: grayscale(1);
+}
+.contenedorVideo > .videoFondo {
+  	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+.contenedorVideo .divFormulario {
+  	position: relative;
+  	z-index: 2;
+}
+.contenedorVideo .overlay {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	height: 100%;
+  	width: 100%;
+  	background-color: black;
+  	opacity: 0.5;
+  	z-index: 1;
+}
+@media (pointer: coarse) and (hover: none) {
+  	.contenedorVideo{
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+}
+ 	.contenedorVideo > .divFormulario{
+    display: none;
+  }
+}
+.h1contactanos {
+	margin-top: 50px;
+	color: $secondcolor-font;
+	font-family: $mainfont;
+	font-size: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-shadow: 5px 5px 5px rgba(0,0,0,0.5);	
+}
+.containerform {
+	position: absolute;
+	top: 80px;
+	width: 100%;
+}
+.divFormulario {
+	margin: auto;
+	padding: 20px;
+	width: 720px;
+	border: solid 1.5px $secondcolor-font;
+	background-color: #1b1d2f;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	z-index: 100;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.5);
+}
+.mdl-textfield {
+	color: #54A8A7 !important;
+}
+.textInput {
+	font-family: 'Lato', sans-serif;
+	color: $secondcolor-font;
+	border-bottom: 1px solid white;
+}
+.textLabel {
+	color: $secondcolor-font;
+}
+.textCheckbox {
+	color: $secondcolor-font;
+	font-size: 0.75rem;
+}
+.prefContacto {
+	font-size: 1rem;
+	font-family: $mainfont;
+	color: $maincolor-font;
+	font-weight: bold;
+}
+.contenedorTextarea {
+	width: 100%;
+}
+/*FIN CONTACTO*/
+
+/*INICIO ESTILO DEL FOOTER*/
+footer {
+	margin-top: 200px;
+}
+.social-icon-footer {
+	margin: 30px;
+	color: $maincolor-font;
+}
+.social-icon-footer:hover {
+	color: $secondcolor-font;
+	text-decoration: none;
+}
+.menuFooter > a {
+	font-family: $mainfont;
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: $maincolor-font;
+}
+.menuFooter > a:hover{
+	color: white;
+}
+.copr {
+	margin-bottom: 10px;
+	color: grey;
+	font-family: $mainfont;
+	font-size: 0.8rem;
+	color: $maincolor-font;
+}
+.copr > a {
+	font-family: $mainfont;
+	text-decoration: none;
+	font-style: 0.9rem bold;
+	color: white;
+}
+hr {
+	border: 0.7px solid white; 
+	margin: 10px 0; 
+}
+/*FIN ESTILO DEL FOOTER*/
+
+
 
