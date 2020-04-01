@@ -17,88 +17,109 @@
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:400,700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="losCuentos">
+	<header>
+		<nav class="navbar navbar-expand-lg">
+		  	<span class="logoNav">
+		  		<a class="navbar-brand" href="index.html"><img src="images/logo_loscuentos.svg" alt="Logo: ir a inicio"></a>
+		  	</span>
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon">
+		    		<i class="fa fa-navicon"></i>
+		    	</span>
+		  	</button>
+		  	<div class="contenedorCollapse collapse navbar-collapse justify-content-center px-4" id="navbarSupportedContent">
+		    	<ul class="menu-nav navbar-nav text-nowrap">
+		      		<li class="nav-item active mr-5">
+		        		<a class="nav-link" href="index.html">INICIO<span class="sr-only">(current)</span>
+		        		</a>
+      				</li>
+		      		<li class="nav-item mr-5">
+		       			<a class="nav-link" href="los_cuentos.html">LOS CUENTOS</a>
+		     	 	</li>
+		      		<li class="nav-item dropdown mr-5">
+		        		<a class="nav-link dropdown-toggle" href="discografia.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOGRAFÍA</a>
+		        		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		          			<a class="dropdown-item" href="discografia.html#albumRio">El río curvas</a>
+		          			<div class="dropdown-divider"></div>
+		          			<a class="dropdown-item" href="discografia.html#albumLaberinto">¿Qué es el laberinto?</a>
+		          			<div class="dropdown-divider"></div>
+		          			<a class="dropdown-item" href="discografia.html#albumDictador">Así gritó el dictador</a>
+		        		</div>
+		      		</li>
+		      		<li class="nav-item mr-5">
+		        		<a class="nav-link" href="galeria.html">GALERÍA</a>
+		      		</li>
+		       		<li class="nav-item">
+		        		<a class="nav-link" href="contacto.html">CONTACTO</a>
+		      		</li>
+					
+				</ul>
+			</div>
+			<div class="d-sm-inline-flex">
+				<a class="social-icon" data-tooltip="Instagram" href="https://www.instagram.com/loscuentosdelabuenapipa/?hl=es-la" target="_blank">
+	    			<i class="fa fa-instagram" aria-hidden="true"></i>
+	  			</a>
+				<a class="social-icon" data-tooltip="Facebook" href="https://www.facebook.com/loscuentosdelabuenapipa/" target="_blank">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+	 			</a>
+	  			<a class="social-icon" data-tooltip="YouTube" href="https://www.youtube.com/user/LCDLBuenaPipa" target="_blank">
+	    			<i class="fa fa-youtube" aria-hidden="true"></i>
+	  			</a>
+				<a class="social-icon" data-tooltip="Spotify" href="https://open.spotify.com/artist/4yIsXFg73pYq9XvTiV3el8?si=UlW5IBzlSYe2hx1Jk4AeiQ" target="_blank">
+	    			<i class="fa fa-spotify" aria-hidden="true"></i>
+		  		</a>
+			</div>
+		</nav>
+	</header>
 	<div class="container-fluid">
-		<header>
-			<nav class="justify-content-center">
-				<span class="logoNav" >
-					<a href="index.html">
-						<img src="images/logo_loscuentos.svg" alt="Logotipo de Los Cuentos de la Buena Pipa">
-					</a>
-				</span>
-				<span class="linkMenu">
-					<a class="text-decoration-none" href="index.html">INICIO</a>
-					<a class="text-decoration-none active" href="los_cuentos.html">LOS CUENTOS</a>
-					<a class="text-decoration-none" href="discografia.html">DISCOGRAFÍA</a>
-					<a class="text-decoration-none" href="galeria.html">GALERIA</a>
-					<a class="text-decoration-none" href="contacto.html">CONTACTO</a>
-				</span>
-				<span class="social">
-					<a class="social-icon" data-tooltip="Instagram" href="https://www.instagram.com/loscuentosdelabuenapipa/?hl=es-la" target="_blank">
-	    				<i class="fa fa-instagram" aria-hidden="true"></i>
-	  				</a>
-					<a class="social-icon" data-tooltip="Facebook" href="https://www.facebook.com/loscuentosdelabuenapipa/" target="_blank">
-	    				<i class="fa fa-facebook" aria-hidden="true"></i>
-	 				</a>
-	  				<a class="social-icon" data-tooltip="YouTube" href="https://www.youtube.com/user/LCDLBuenaPipa" target="_blank">
-	    				<i class="fa fa-youtube" aria-hidden="true"></i>
-	  				</a>
-	  				<a class="social-icon" data-tooltip="Spotify" href="https://open.spotify.com/artist/4yIsXFg73pYq9XvTiV3el8?si=UlW5IBzlSYe2hx1Jk4AeiQ" target="_blank">
-		    			<i class="fa fa-spotify" aria-hidden="true"></i>
-		  			</a>
-				</span>
-			</nav>
-		</header>
-
 		<main>
 			<section>
-				<article>
-					<h1 class="h1clase">Los Cuentos de la Buena Pipa</h1>
-					<div class="contenedorLosCuentos">
-						<div id="carouselExampleFade" class="slideLosCuentos carousel slide carousel-fade" data-ride="carousel">
-							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-							  	<ol class="carousel-indicators">
-								    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-								    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-								    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-							  	</ol>
-							  	<div class="carousel-inner">
-							    	<div class="carousel-item active">
-							      	<img src="images/foto_banda1.jpg" class="img-responsive d-block w-100" alt="Foto grupal de los cuestos en estudio fotográfico">
-							    </div>
-							    <div class="carousel-item">
-							      	<img src="images/foto_banda2.jpg" class="img-responsive d-block w-100" alt="Foto grupal en Club 1518, 08-12-2018, Rosario (Santa Fe, Argentina)">
-							    </div>
-							    <div class="carousel-item">
-							      	<img src="images/foto_banda3.jpg" class="img-responsive d-block w-100" alt="Recital los cuentos en Chile">
-							    </div>
-							  	</div>
-							  	<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-							    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							    	<span class="sr-only">Siguiente</span>
-							  	</a>
-							  	<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-							    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							    	<span class="sr-only">Anterior</span>
-							  	</a>
+				<div class="container">
+					<article class="contenedorSliderLC">
+						<h1 class="h1clase">Los Cuentos de la Buena Pipa</h1>
+						<div id="carouseLC" class="carousel slide carousel-fade text-center" data-ride="carousel">
+						  	<ol class="carousel-indicators">
+						    	<li data-target="#carouseLC" data-slide-to="0" class="active"></li>
+						    	<li data-target="#carouseLC" data-slide-to="1"></li>
+						    	<li data-target="#carouseLC" data-slide-to="2"></li>
+						  	</ol>
+						  	<div class="carousel-inner">
+						    	<div class="carousel-item active">
+						      		<img class="img-fluid" src="images/foto_banda1.jpg" alt="Foto grupal de los cuestos en estudio fotográfico">
+						    	</div>
+						    	<div class="carousel-item">
+						      		<img class="img-fluid" src="images/foto_banda2.jpg" alt="Foto grupal en Club 1518, 08-12-2018, Rosario (Santa Fe, Argentina)">
+						    	</div>
+						    	<div class="carousel-item">
+						      		<img class="img-fluid" src="images/foto_banda3.jpg" alt="Recital los cuentos en Chile">
+						    	</div>
 						  	</div>
+						  	<a class="carousel-control-prev" href="#carouseLC" role="button" data-slide="prev">
+						    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    	<span class="sr-only">Previous</span>
+						  	</a>
+						  	<a class="carousel-control-next" href="#carouseLC
+						  	" role="button" data-slide="next">
+						    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    	<span class="sr-only">Next</span>
+						  	</a>
 						</div>
-						<div class="divContenidoLC" div data-aos="fade-up" data-aos-duration="1000">
-							<h2 class="h2clase">La curiosidad siempre quiso escuchar el cuento de la buena pipa</h2>
-							<p class="pclase">
-							No por molestos sino por curiosos, <strong>Los Cuentos de la Buena Pipa</strong> buscan quebrar los límites de la canción para abrirle la puerta a una fusión inagotable de diversos géneros musicales.
-							<br>
-							Recorridos, paisajes, aperturas y pulso. En su proyección hacia un espacio musical en expansión.
-							<br>
-							Los Cuentos de la Buena Pipa mantienen siempre una energía vital y rítmica arrolladora.<em> Se trata de forzar los límites de la canción, abrir las puertas de la fusión.</em> 
-							<br>
-							Recorrer una travesía musical que entrama texturas y sonoridades de la música electrónica, la cumbia, el rock y la psicodelia.
-							<br>
-							Siempre de manera autogestionada y con <strong>más de 10 años de trayectoria</strong>, la banda tiene <em>cinco discos editados</em> y  numerosas presentaciones en diversos escenarios de Rosario y la zona, Capital Federal, Córdoba, Entre Ríos, Mendoza y Misiones, como así también giras por Chile, Uruguay, Brasil y la Patagonia argentina.
-							</p>
+
+						<div class="divContenedorLC" div data-aos="fade-up" data-aos-duration="1000">
+							<div class="divContenidoLC">
+								<h2 class="h2clase">La curiosidad siempre quiso escuchar el cuento de la buena pipa</h2>
+								<p class="pclase">
+								No por molestos sino por curiosos, <strong>Los Cuentos de la Buena Pipa</strong> buscan quebrar los límites de la canción para abrirle la puerta a una fusión inagotable de diversos géneros musicales.
+								<br>
+								Los Cuentos de la Buena Pipa mantienen siempre una energía vital y rítmica arrolladora.<em> Se trata de forzar los límites de la canción, abrir las puertas de la fusión.</em> 
+								<br>
+								Recorrer una travesía musical que entrama texturas y sonoridades de la música electrónica, la cumbia, el rock y la psicodelia.
+								</p>
+							</div>
 						</div>
-					</div>
-				</article>
+					</article>
+				</div>
 
 				<article>
 					<div class="contenedorFondoDiscografía">
@@ -159,9 +180,9 @@
 		
 		<footer>
 			<div class="container">
-    			<div class="row d-flex text-center justify-content-center mb-4">
+				<div class="row d-flex text-center justify-content-center mb-4">
 					<div class="flex-center">
-          				<a class="social-icon-footer" data-tooltip="Instagram" href="https://www.instagram.com/loscuentosdelabuenapipa/?hl=es-la" target="_blank">
+	      				<a class="social-icon-footer" data-tooltip="Instagram" href="https://www.instagram.com/loscuentosdelabuenapipa/?hl=es-la" target="_blank">
 	    					<i class="fa fa-instagram" aria-hidden="true"></i>
 	  					</a>
 						<a class="social-icon-footer" data-tooltip="Facebook" href="https://www.facebook.com/loscuentosdelabuenapipa/" target="_blank">
@@ -173,32 +194,32 @@
 	  					<a class="social-icon-footer" data-tooltip="Spotify" href="https://open.spotify.com/artist/4yIsXFg73pYq9XvTiV3el8?si=UlW5IBzlSYe2hx1Jk4AeiQ" target="_blank">
 		    				<i class="fa fa-spotify" aria-hidden="true"></i>
 		  				</a>
-       		 		</div>
-   		 		</div>
-  				<div class="row text-center d-flex justify-content-center">
-      				<div class="menuFooter col-md-2 mb-3">
-        				<a class="text-decoration-none" href="index.html">INICIO</a>
-      				</div>
-      				<div class="menuFooter col-md-2 mb-3">
-        				<a class="text-decoration-none" href="los_cuentos.html">LOS CUENTOS</a>
-      				</div>
-      				<div class="menuFooter col-md-2 mb-3">
-       					<a class="text-decoration-none" href="discografia.html">DISCOGRAFÍA</a>
-      				</div>
-      				<div class="menuFooter col-md-2 mb-3">
-       					<a class="text-decoration-none" href="galeria.html">GALERIA</a>
-      				</div>
-      				<div class="menuFooter col-md-2 mb-3">
-        				<a class="text-decoration-none" href="contacto.html">CONTACTO</a>
-      				</div>
+	   		 		</div>
+			 		</div>
+					<div class="row text-center d-flex justify-content-center">
+	  				<div class="menuFooter col-md-2 mb-3">
+	    				<a class="text-decoration-none" href="index.html">INICIO</a>
+	  				</div>
+	  				<div class="menuFooter col-md-2 mb-3">
+	    				<a class="text-decoration-none" href="los_cuentos.html">LOS CUENTOS</a>
+	  				</div>
+	  				<div class="menuFooter col-md-2 mb-3">
+	   					<a class="text-decoration-none" href="discografia.html">DISCOGRAFÍA</a>
+	  				</div>
+	  				<div class="menuFooter col-md-2 mb-3">
+	   					<a class="text-decoration-none" href="galeria.html">GALERIA</a>
+	  				</div>
+	  				<div class="menuFooter col-md-2 mb-3">
+	    				<a class="text-decoration-none" href="contacto.html">CONTACTO</a>
+	  				</div>
 				</div>
-    		</div>
-  			<hr>
- 			<div class="copr text-center">© 2020 Copyright:
-    			<a href="https://www.linkedin.com/in/nico-foster/">NicoFoster</a>
-  			</div>
+			</div>
+				<hr>
+				<div class="copr text-center">© 2020 Copyright:
+				<a href="https://www.linkedin.com/in/nico-foster/">NicoFoster</a>
+			</div>
 		</footer>
-	 </div>
+	</div>
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
