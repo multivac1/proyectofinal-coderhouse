@@ -8,8 +8,8 @@ $secondfont: 'Poppins', sans-serif;
 
 /*Quito los Margenes y Padding por defecto*/
 *{
-	padding: 0px;
 	margin: 0px;
+	padding: 0px;
 }
 /*BODY COLOR*/
 body {
@@ -78,47 +78,62 @@ main > section > article {
 
 /*MENU DE NAVEGACIÓN*/
 nav {
-	height: 60px;
 	width: 100%;
-	padding-top: 15px;
+	height: 60px;
 	font-family: $secondfont;
 	font-size: 1rem;
 	background-color: #0d0f18;
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
+	z-index: 100;
 }
-.linkMenu {
-	margin: 0 70px;
-}
-.linkMenu > a {
-	margin: 25px;
-	color: $secondcolor-font;
-}
-/*Transición menú hover*/
-.linkMenu a:hover {
+body.losCuentos ul.menu-nav li:nth-child(2) a,
+body.discografia ul.menu-nav li:nth-child(3) a,
+body.galeria ul.menu-nav li:nth-child(4) a,
+body.contacto ul.menu-nav li:nth-child(5) a {
 	color: #54A8A7;
-	transition: 0.5s; 
 }
-.active {
-	color: #54A8A7 !important;
+.navbar-toggler-icon > i {
+	color: white;
+	font-size:28px;
+	&:hover {
+		color: $maincolor-font;
+	}
+}
+.contenedorCollapse {
+	background-color: #0d0f18;
+	& a {
+		color: $secondcolor-font;
+		&:hover {
+			color: #54A8A7;
+			transition-duration: 0.2s;
+		}
+	}
+}
+.collapse > .navbar-nav > .nav-item > .dropdown-menu {
+	background-color: rgba(13,15,24,0.8);
+	& a {
+		color: #54A8A7;
+		&:hover {
+			background-color: rgba(0,0,0,0.3);
+		}
+	}
 }
 .social-icon {
 	margin: 10px;
 	color: $secondcolor-font;
-}
-.social-icon:hover {
-	color: $maincolor-font;
-	text-decoration: none;
+	&:hover {
+		color: $maincolor-font;
+		text-decoration: none;
+	}
 }
 .logoNav {
 	height: 100%;
 	width: 100px;
 }
 .logoNav > a > img {
-	width: 100%;
 	height: 100%;
+	width: 100%;
 }
+
 /*FIN MENU*/
 
 /*INICIO INDEX*/
@@ -133,14 +148,13 @@ nav {
 }
 #logo {
 	margin: auto;
-	padding-top: 180px;
-	padding-bottom: 10px;
+	padding: 180px 0 10px 0;
 	display: block;
 }
 .contenedorVideoIndex {
 	margin-bottom: 50px;
-	width: 100%;
 	height: 50%;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -148,8 +162,8 @@ nav {
 }
 .videoIndex {
 	margin: auto;
-	width: 720px;
 	height: 480px;
+	width: 720px;
 	box-shadow: 5px 5px 3px rgba(0,0,0,0.5);
 	display: inline-flex;
 }
@@ -163,22 +177,16 @@ nav {
 /*FIN INDEX*/
 
 /*INICIO LOS CUENTOS*/
-.contenedorLosCuentos {
-	width: auto;
+.contenedorSliderLC {
+	margin-top: 30px;
+	z-index: 0;
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: row wrap;
 	justify-content: center;
-	align-items: center;
 }
-.slideLosCuentos {
-	object-fit: cover;
-  	height: auto;
- 	width: 920px;
- }
-.divContenidoLC {
-	margin-top: 15px;
-	margin-bottom: 80px;
-	width: 920px;
+.divContenedorLC {
+	margin: 20px auto 80px auto;
+	width: 80%;
 	letter-spacing: 0.4px;
 }
 .divContenidoLC > .h2clase {
@@ -228,13 +236,18 @@ nav {
 	text-decoration: none;
 	color: $secondcolor-font;
 	font-size: 1.8rem;
+	&:hover {
+		color: #d30172;
+	}
 }
-.contenidoAlbum a:hover {
-	color: #d30172;
-}
-.contenidoAlbum > span > iframe:hover {
-	box-shadow: 0px 0px 25px rgba(211,1,114,0.7);
-	transition-duration: 0.3s;
+.contenidoAlbum > div > iframe {
+	border: 0; 
+	height: 29.3rem;
+	width: 21rem; 
+	&:hover {
+		box-shadow: 0px 0px 25px rgba(211,1,114,0.7);
+		transition-duration: 0.3s;
+	}
 }
 .infoAlbum {
 	margin-left: 40px;
@@ -242,9 +255,9 @@ nav {
 }
 .contenedorAlbum > .contenidoAlbum > .infoAlbum > table {
 	margin-bottom: 10px;
-}
-.contenedorAlbum > .contenidoAlbum > .infoAlbum > table, tr, th {
-	border:rgba(0,0,0,0) 10px solid;
+		& th {
+			border:rgba(0,0,0,0) 10px solid;
+	}
 }	
 .contenedorTracklist {
 	margin: 30px auto 80px auto;
@@ -253,22 +266,47 @@ nav {
 	text-align: center;
 }
 .separador {
+	margin: 25px 0 20px 0;
 	width: 800px;
 	border: 1px solid white; 
-	margin-top: 25px; 
-	margin-bottom: 20px;
 }
 h2 {
 	width: 100%;
 	font-size: 1.8rem;
 	color: $secondcolor-font;
 }
+/*inicio version mobile*/
+@media only screen and (max-width: 600px) {
+	.contenidoAlbum {
+		height: auto;
+		width: 100%;
+		flex-flow: row wrap;
+	}
+	.contenidoAlbum > div {
+		height: auto;
+		width: 100%;
+	}
+	.contenidoAlbum > div > iframe {
+		height: 400px;
+		width: 100%; 
+	}
+	.contenedorTracklist {
+		width: 100%;
+	}
+	.separador {
+		width: 100%;
+	}
+	.contenedorTracklist > iframe {
+		width: 100%;
+	}
+}
+/*fin version mobile*/
 /*FIN DISCOGRAFÍA*/
 
 /*INICIO GALERIA*/
 .contenedorGaleria {
-	width: 100%;
 	margin-bottom: 50px;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 }
@@ -284,18 +322,18 @@ h2 {
 }
 .contenidoGaleria > figure {
 	filter: grayscale(100%);
-	width: auto;
 	height: 200px;
-}
-.contenidoGaleria > figure:hover {
-	transform: translateY(-5px);
-	transition-duration: 0.3s;
-	box-shadow: 6px 9px 7px 0px rgba(211,1,114,0.4);
-	filter: grayscale(0%);
+	width: auto;
+	&:hover {
+		transform: translateY(-5px);
+		transition-duration: 0.3s;
+		box-shadow: 6px 9px 7px 0px rgba(211,1,114,0.4);
+		filter: grayscale(0%);
+	}
 }
 .contenidoGaleria > figure > a > img {
-	width: 100%;
 	height: 100%;
+	width: 100%;
 	object-fit: cover;
 	border-radius: 5px;
 }
@@ -303,15 +341,35 @@ h2 {
 	grid-column: span 2;
 }
 .contenedorVideos {
+	margin-top: 20px;
+	width: 100%;
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: center;
 }
 .contenedorVideos > span {
-	margin: 10px;
-	width: 100%;
+	padding: 0 10px;
 	height: 100%;
+	width: 100%;
 }
+.contenedorVideos > span > iframe {
+	width: 100%;
+}
+/*inicio version desktop*/
+@media (min-width: 1380px) {
+	.contenidoGaleria {
+	width: 60%;
+   }
+}
+/*fin version desktop*/
+/*inicio version mobile*/
+@media only screen and (max-width: 600px) {
+	.contenedorVideos {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+}
+/*fin version mobile*/
 /*FIN GALERIA*/
 
 /*CONTACTO*/
@@ -332,8 +390,8 @@ h2 {
 	left: 50%;
 	min-width: 100%;
 	min-height: 100%;
-	width: auto;
 	height: auto;
+	width: auto;
 	z-index: 0;
 	-ms-transform: translateX(-50%) translateY(-50%);
 	-moz-transform: translateX(-50%) translateY(-50%);
@@ -413,6 +471,27 @@ h2 {
 .contenedorTextarea {
 	width: 100%;
 }
+/*inicio version tablet*/
+@media (min-width: 600px) and (max-width: 1024px) {
+	.divFormulario {
+		width: 60%;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+}
+/*fin version tablet*/
+
+/*inicio version mobile*/
+@media only screen and (max-width: 600px) {
+	.divFormulario {
+		margin: 10px;
+		padding: 1rem;
+		width: 90%;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+}
+/*fin version mobile*/
 /*FIN CONTACTO*/
 
 /*INICIO ESTILO DEL FOOTER*/
@@ -422,19 +501,19 @@ footer {
 .social-icon-footer {
 	margin: 30px;
 	color: $maincolor-font;
-}
-.social-icon-footer:hover {
-	color: $secondcolor-font;
-	text-decoration: none;
+	&:hover {
+		color: $secondcolor-font;
+		text-decoration: none;
+	}
 }
 .menuFooter > a {
 	font-family: $mainfont;
 	font-size: 0.8rem;
 	font-weight: bold;
 	color: $maincolor-font;
-}
-.menuFooter > a:hover{
-	color: white;
+	&:hover{
+		color: white;
+	}
 }
 .copr {
 	margin-bottom: 10px;
