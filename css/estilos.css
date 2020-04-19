@@ -157,6 +157,19 @@ body.contacto ul.menu-nav li:nth-child(5) a {
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
   display: inline-flex; }
 
+/*Inicio version mobile*/
+@media screen and (max-width: 600px) {
+  #backIndex {
+    background-image: url(../images/fondo_index_small.jpg);
+    background-size: contain; }
+
+  #personaje {
+    max-height: 50%;
+    max-width: 50%; }
+
+  #dialogo {
+    max-width: 100%; } }
+/*Fin version mobile*/
 /*FIN INDEX*/
 /*INICIO LOS CUENTOS*/
 .contenedorSliderLC {
@@ -200,6 +213,11 @@ body.contacto ul.menu-nav li:nth-child(5) a {
   background-size: cover;
   background-position: center center; }
 
+/*Inicio version mobile*/
+@media screen and (max-width: 600px) {
+  .contenedorSliderLC {
+    width: 100%; } }
+/*Fin verson mobile*/
 /*FIN LOS CUENTOS*/
 /*INICIO DISCOGRAFÍA*/
 .contenedorAlbum {
@@ -238,7 +256,7 @@ body.contacto ul.menu-nav li:nth-child(5) a {
 .infoAlbum > span > a {
   text-decoration: none;
   color: white;
-  font-size: 1.8rem; }
+  font-size: 1.8em; }
   .infoAlbum > span > a:hover {
     color: #d30172; }
 
@@ -303,7 +321,7 @@ body.contacto ul.menu-nav li:nth-child(5) a {
     width: 100%; }
 
   .infoAlbum > span > a {
-    font-size: 1.5rem; }
+    font-size: 0.8rem; }
 
   .contenedorTracklist {
     width: 100%; }
@@ -372,7 +390,13 @@ body.contacto ul.menu-nav li:nth-child(5) a {
   .contenedorVideos {
     display: flex;
     justify-content: center;
-    flex-flow: row wrap; } }
+    flex-flow: row wrap; }
+
+  .contenidoGaleria {
+    width: 100%; }
+
+  .horizontal {
+    grid-column: span 1; } }
 /*fin version mobile*/
 /*FIN GALERIA*/
 /*CONTACTO*/
@@ -409,10 +433,15 @@ body.contacto ul.menu-nav li:nth-child(5) a {
     opacity: 0.5;
     z-index: 1; }
 
+.containerform {
+  position: absolute;
+  top: 80px;
+  width: 100%; }
+
 .divFormulario {
   margin: auto;
   padding: 20px;
-  width: 720px;
+  width: 50%;
   border: solid 1.5px white;
   background-color: #1b1d2f;
   display: flex;
@@ -430,11 +459,6 @@ body.contacto ul.menu-nav li:nth-child(5) a {
   justify-content: center;
   flex-direction: row;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
-
-.containerform {
-  position: absolute;
-  top: 80px;
-  width: 100%; }
 
 .textInput {
   font-family: 'Lato', sans-serif;
@@ -467,7 +491,7 @@ body.contacto ul.menu-nav li:nth-child(5) a {
 /*inicio version mobile*/
 @media only screen and (max-width: 600px) {
   .divFormulario {
-    margin: 10px;
+    margin: auto;
     padding: 1rem;
     width: 90%;
     flex-flow: row wrap;
