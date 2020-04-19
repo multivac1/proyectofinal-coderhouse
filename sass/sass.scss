@@ -175,6 +175,21 @@ body.contacto ul.menu-nav li:nth-child(5) a {
 	box-shadow: 5px 5px 3px rgba(0,0,0,0.5);
 	display: inline-flex;
 }
+/*Inicio version mobile*/
+@media screen and (max-width: 600px) {
+	#backIndex {
+		background-image: url(../images/fondo_index_small.jpg);
+		background-size: contain;
+	}
+	#personaje {
+		max-height: 50%;
+		max-width: 50%;
+	}
+	#dialogo {
+		max-width: 100%;
+	}
+}
+/*Fin version mobile*/
 /*FIN INDEX*/
 
 /*INICIO LOS CUENTOS*/
@@ -217,6 +232,13 @@ body.contacto ul.menu-nav li:nth-child(5) a {
 	background-size: cover;
 	background-position: center center;
 }
+/*Inicio version mobile*/
+@media screen and (max-width: 600px) {
+	.contenedorSliderLC {
+		width: 100%;
+	}
+}
+/*Fin verson mobile*/
 /*FIN LOS CUENTOS*/
 
 /*INICIO DISCOGRAFÍA*/
@@ -258,7 +280,7 @@ body.contacto ul.menu-nav li:nth-child(5) a {
 .infoAlbum > span > a {
 	text-decoration: none;
 	color: $secondcolor-font;
-	font-size: 1.8rem;
+	font-size: 1.8em;
 	&:hover {
 		color: $maincolor-font;
 	}
@@ -329,7 +351,7 @@ body.contacto ul.menu-nav li:nth-child(5) a {
 		width: 100%; 
 	}
 	.infoAlbum > span > a {
-		font-size: 1.5rem;
+		font-size: 0.8rem;
 	}
 	.contenedorTracklist {
 		width: 100%;
@@ -407,6 +429,12 @@ body.contacto ul.menu-nav li:nth-child(5) a {
 		@include centrado();
 		flex-flow: row wrap;
 	}
+	.contenidoGaleria {
+		width: 100%;
+	}
+	.horizontal {
+		grid-column: span 1;
+	}
 }
 /*fin version mobile*/
 /*FIN GALERIA*/
@@ -447,10 +475,15 @@ body.contacto ul.menu-nav li:nth-child(5) a {
 	  	z-index: 1;
 	}
 }
+.containerform {
+	position: absolute;
+	top: 80px;
+	width: 100%;
+}
 .divFormulario {
 	margin: auto;
 	padding: 20px;
-	width: 720px;
+	width: 50%;
 	border: solid 1.5px $secondcolor-font;
 	background-color: #1b1d2f;
 	@include centrado();
@@ -466,11 +499,6 @@ body.contacto ul.menu-nav li:nth-child(5) a {
 	@include centrado();
 	flex-direction: row;
 	text-shadow: 5px 5px 5px rgba(0,0,0,0.5);	
-}
-.containerform {
-	position: absolute;
-	top: 80px;
-	width: 100%;
 }
 .textInput {
 	font-family: 'Lato', sans-serif;
@@ -506,7 +534,7 @@ body.contacto ul.menu-nav li:nth-child(5) a {
 /*inicio version mobile*/
 @media only screen and (max-width: 600px) {
 	.divFormulario {
-		margin: 10px;
+		margin: auto;
 		padding: 1rem;
 		width: 90%;
 		flex-flow: row wrap;
